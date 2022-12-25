@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSM", "TSM\TSM.csproj", "{4A2BB23F-33F9-4341-A69E-B9D575832A54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSM", "TSM\TSM.csproj", "{4A2BB23F-33F9-4341-A69E-B9D575832A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST", "TEST\TEST.csproj", "{C8313C55-FB30-423D-A1A4-4795830B25A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4A2BB23F-33F9-4341-A69E-B9D575832A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A2BB23F-33F9-4341-A69E-B9D575832A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A2BB23F-33F9-4341-A69E-B9D575832A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8313C55-FB30-423D-A1A4-4795830B25A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8313C55-FB30-423D-A1A4-4795830B25A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8313C55-FB30-423D-A1A4-4795830B25A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8313C55-FB30-423D-A1A4-4795830B25A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

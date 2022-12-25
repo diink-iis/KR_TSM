@@ -8,18 +8,18 @@ internal class Program
     static void Main(string[] args)
     {
         WaveFile waveContainer;
-        using (var stream = new FileStream(@"C:\Users\isaev\NWaves\test.wav", FileMode.Open))
+        using (var stream = new FileStream(@"C:\Users\isaev\Desktop\Study\3 курс\КР_1_семестр/Чапкин.wav", FileMode.Open))
         {
             waveContainer = new WaveFile(stream);
         }
         DiscreteSignal left = waveContainer[Channels.Left];
         DiscreteSignal right = waveContainer[Channels.Right];
 
-        var str = Operation.TimeStretch(left, 1.75, NWaves.Operations.Tsm.TsmAlgorithm.PhaseVocoder);
-        var str2 = Operation.TimeStretch(right, 1.75, NWaves.Operations.Tsm.TsmAlgorithm.Wsola);
+        var str = Operation.TimeStretch(left, 1.75, TSM.Algorithms.TsmAlgorithm.PhaseVocoder);
+        var str2 = Operation.TimeStretch(right, 1.75, TSM.Algorithms.TsmAlgorithm.Wsola);
 
         var waveFileStereo = new WaveFile(new[] { str, str2 });
-        using (var stream = new FileStream(@"C:\Users\isaev\NWaves\test2.wav", FileMode.Create))
+        using (var stream = new FileStream(@"C:\Users\isaev\Desktop\Study\3 курс\КР_1_семестр/Чапкин2.wav", FileMode.Create))
         {
             waveFileStereo.SaveTo(stream);
         }
