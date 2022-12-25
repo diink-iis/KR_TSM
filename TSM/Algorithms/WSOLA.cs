@@ -3,8 +3,6 @@ using TSM.Operations;
 using TSM.Signals;
 using TSM.Utils;
 using TSM.Windows;
-using System;
-using System.Linq;
 
 namespace TSM.Algorithms
 {
@@ -58,7 +56,7 @@ namespace TSM.Algorithms
         /// <param name="windowSize">Window size</param>
         /// <param name="hopAnalysis">Hop size at analysis stage</param>
         /// <param name="maxDelta">Max delta in WSOLA algorithm</param>
-        public Wsola(double stretch, int windowSize, int hopAnalysis, int maxDelta = 0)
+        public WSOLA(double stretch, int windowSize, int hopAnalysis, int maxDelta = 0)
         {
             _stretch = stretch;
             _windowSize = Math.Max(windowSize, 32);
@@ -75,7 +73,7 @@ namespace TSM.Algorithms
         /// Constructs <see cref="Wsola"/> TSM processor and auto-derives WSOLA parameters for given <paramref name="stretch"/> ratio.
         /// </summary>
         /// <param name="stretch">Stretch ratio</param>
-        public Wsola(double stretch)
+        public WSOLA(double stretch)
         {
             _stretch = stretch;
 

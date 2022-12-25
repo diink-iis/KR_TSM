@@ -2,8 +2,6 @@
 using TSM.Transforms.Base;
 using TSM.Utils;
 using System;
-using TSM.Signals;
-using TSM.Utils;
 
 namespace TSM.Transforms
 {
